@@ -52,6 +52,41 @@ padding-left: 15px;
 vertical-align: middle;
 display: inline-block;
 }
+.footer {
+    font-family: arial,sans-serif;
+color: #222;
+font-size: 10pt;
+background: #f2f2f2;
+border-top: 1px solid #e4e4e4;
+line-height: 40px;
+min-width: 400px;
+bottom: 0;
+left: 0;
+position: absolute;
+right: 0;
+}
+.footer-left {
+    line-height: 40px;
+font-size: 14px;
+font-family: arial,sans-serif;
+padding-left: 27px;
+margin: 0 !important;
+text-decoration: none;
+white-space: nowrap;
+color: #5f6368;
+display: inline-block;
+}
+.footer-right {
+    line-height: 40px;
+font-size: 14px;
+font-family: arial,sans-serif;
+padding-left: 27px;
+margin: 0 !important;
+text-decoration: none;
+white-space: nowrap;
+color: #5f6368;
+display: inline-block;
+}
 </style>
 <body>
     <nav>
@@ -66,14 +101,34 @@ display: inline-block;
             <a class="nav-words-right" href="google.com">Account</a>
         </div>
     </nav>
-    <center>
+    <center class="center">
        <div>
         <img src="/img/google-logo.png" alt="The word Google with different colors for each letter">
        </div>
        <div>
         <input type="text" placeholder="why not use a placeholder for now">
        </div> 
+       <div class="buttons">
+           <input type="submit" value="Google Search">
+           <input type="submit" value="I'm Feeling Lucky">
+       </div>
+       <div>
+           <a class="center-text" href="google.com">Meet Google TV</a>
+           <span>! Get the entertainment you love, with a little help from Google</span>
+       </div>
     </center>
+    <footer class="footer">
+        <div class="footer-left">
+            <a class="footer-words-left" href="google.com">Advertising</a>
+            <a class="footer-words-left" href="google.com">Business</a>
+            <a class="footer-words-left" href="google.com">How Search Works</a>
+        </div>
+        <div class="footer-right">
+            <a class="footer-words-right" href="google.com">Privacy</a>
+            <a class="footer-words-right" href="google.com">Terms</a>
+            <a class="footer-words-right" href="google.com">Settings</a>
+        </div>
+    </footer>
 </body>
 </head>
 </html>
