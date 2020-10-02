@@ -2,9 +2,70 @@
 <html>
 <head>
 <style>
-
+.navbar-left {
+    font-family: arial,sans-serif;
+color: #222;
+font-size: 13px;
+position: absolute;
+margin: 7px 0 0 10px;
+}
+.navbar-right {
+    font-family: arial,sans-serif;
+color: #222;
+font-size: 13px;
+white-space: nowrap;
+margin-left: 0!important;
+margin-right: 0!important;
+padding-left: 30px;
+padding-right: 30px;
+position: relative;
+text-align: right;
+align-items: center;
+justify-content: flex-end;
+float: right;
+order: 1;
+display: flex;
+flex: 1 1 auto;
+z-index: 987;
+min-width: 181px;
+}
+.nav-words-left {
+    font-size: 13px;
+font-family: arial,sans-serif;
+text-decoration: none;
+display: inline-block;
+padding-left: 15px;
+color: #000;
+opacity: 0.75;
+}
+.nav-words-right {
+    font-family: arial,sans-serif;
+color: #222;
+font-size: 13px;
+text-align: right;
+white-space: nowrap;
+line-height: normal;
+flex: 0 0 auto;
+margin-left: 0!important;
+margin-right: 0!important;
+padding-left: 15px;
+vertical-align: middle;
+display: inline-block;
+}
 </style>
 <body>
+    <nav>
+        <div class="navbar-left">
+            <a class="nav-words-left" href="google.com">About</a>
+        <a class="nav-words-left" href="google.com">Store</a>
+    </div>
+        <div class="navbar-right">
+            <a class="nav-words-right" href="google.com">Gmail</a>
+            <a class="nav-words-right" href="google.com">Images</a>
+            <a class="nav-words-right" href="google.com">Apps</a>
+            <a class="nav-words-right" href="google.com">Account</a>
+        </div>
+    </nav>
     <center>
        <div>
         <img src="/img/google-logo.png" alt="The word Google with different colors for each letter">
