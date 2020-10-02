@@ -72,11 +72,11 @@
     outline-width:0px;
     text-align:right;
     text-decoration-color:rgba(0,0,0, 0.87)
-    text-decoration-line:none;
-    text-decoration-style:solid;
-    user-select:none;
-    vertical-align:middle;
-    white-space:nowrap;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 ul {
     list-style-type: none;
@@ -198,8 +198,18 @@ ul {
     cursor:pointer;
     user-select:none;
 }
-.searchbar {
+.search-and-buttons {
     font-family: arial,sans-serif;
+color: #222;
+font-size: small;
+height: 118px;
+display: block;
+font-family: arial,sans-serif;
+font-size: 13px;
+text-align: -webkit-center;
+}
+.search1 {
+        font-family: arial,sans-serif;
 color: #222;
 font-size: small;
 background: #fff;
@@ -211,34 +221,67 @@ z-index: 3;
 height: 44px;
 margin: 0 auto;
 width: auto;
-}
-.innersearchbar{
-    background-color:transparent;
-    border:none;
-    margin:0;
-    padding:0;
-    color:rgba(0,0,0,.87);
-    outline:none;
-    display:flex;
-    flex:100%;
-    -webkit-tap-highlight-color:transparent;
-    margin-top:-37px;
-    font-size:16px;
-    font:16px arial,sans-serif;
-    line-height:34px;
-    height:34px !important;
-    -webkit-writing-mode:horizontal-tb!important;
-    text-rendering:auto;
-    letter-spacing:normal;
-    word-spacing:normal;
-    text-transform:none;
-    text-indent:0px;
-    text-shadow:none;
-    text-align:start;
-    appearance:textfield;
-    -webkit-rtl-ordering:logical;
-    cursor:text;
-}
+    }
+    .search2 {
+        font-family: arial,sans-serif;
+color: #222;
+font-size: small;
+flex: 1;
+display: flex;
+padding: 5px 8px 0 16px;
+padding-left: 14px;
+    }
+    .magnifying-glass {
+        font-family: arial,sans-serif;
+color: #222;
+font-size: small;
+display: flex;
+align-items: center;
+padding-right: 13px;
+margin-top: -5px;
+    }
+    .search3 {
+        font-family: arial,sans-serif;
+color: #222;
+font-size: small;
+display: flex;
+flex: 1;
+flex-wrap: wrap;
+    }
+    .search4 {
+        font: 16px arial,sans-serif;
+line-height: 34px;
+height: 34px !important;
+color: transparent;
+flex: 100%;
+white-space: pre;
+    }
+    .search-input {
+        font: 16px arial,sans-serif;
+line-height: 34px;
+height: 34px !important;
+background-color: transparent;
+border: none;
+margin: 0;
+padding: 0;
+color: rgba(0,0,0,.87);
+outline: none;
+display: flex;
+flex: 100%;
+-webkit-tap-highlight-color: transparent;
+margin-top: -37px;
+font-size: 16px;
+    }
+    .search-voice {
+        font-family: arial,sans-serif;
+color: #222;
+font-size: small;
+display: flex;
+flex: 0 0 auto;
+margin-top: -5px;
+align-items: stretch;
+flex-direction: row;
+    }
 .footerlinks {
     color:rgb(95, 99, 104);
     cursor:pointer;
@@ -302,12 +345,20 @@ width: auto;
     </nav>
     <center class="center">
         <img src="https://www.google.com/logos/doodles/2020/us-voter-registration-day-2020-6753651837108793.2-l.png" alt="Voter's Registration Day 2020">
-        <div>
-            <input type="text" placeholder="">
-        </div>
-        <div>
-            <button class="buttons" type="button">Google Search</button>
-            <button class="buttons" type="button">I'm Feeling Lucky</button>
+        <div class="search-and-buttons">
+            <div class="search1">
+                <div class="search2"></div>
+                <div class="magnifying-glass"></div>
+                <div class="search3">
+                    <div class="search4"></div>
+                    <input class="search-input" type="text">
+                </div>
+                <div class="search-voice"></div>
+            </div>
+            <div>
+                <button class="buttons" type="button">Google Search</button>
+                <button class="buttons" type="button">I'm Feeling Lucky</button>
+            </div>
         </div>
     </center>
     <footer class="footer">
