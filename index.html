@@ -123,6 +123,21 @@ height: 92px;
 transition: padding-top 0.4s ease,width 0.4s ease,height 0.4s ease;
 width: auto;
 padding-top: 109px;
+padding-bottom: 15px;
+}
+.searchbar {
+    font-family: arial,sans-serif;
+color: #222;
+font-size: small;
+background: #fff;
+display: flex;
+border: 1px solid #dfe1e5;
+box-shadow: none;
+border-radius: 24px;
+z-index: 3;
+height: 44px;
+margin: 0 auto;
+width: 300px;
 }
 .buttons {
     background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
@@ -218,13 +233,13 @@ display: inline-block;
         <img class="logo" src="/img/google-logo.png" alt="The word Google with different colors for each letter">
        </div>
        <div>
-        <input type="text" placeholder="why not use a placeholder for now">
+        <input class="searchbar" type="text" placeholder="Search">
        </div> 
-       <div>
+       <div style="padding-top: 15px;">
            <input class="buttons" type="submit" value="Google Search">
            <input class="buttons" type="submit" value="I'm Feeling Lucky">
        </div>
-       <div>
+       <div style="padding-top: 10px;">
            <a class="center-text" href="google.com">Meet Google TV</a>
            <span>! Get the entertainment you love, with a little help from Google</span>
        </div>
