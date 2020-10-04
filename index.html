@@ -53,6 +53,62 @@ color: rgba(0,0,0,0.87);
 text-decoration: none;
 padding-left: 15px;
 }
+.images-right {
+    padding-right: 15px;
+}
+.products {
+    font-size: 13px;
+white-space: nowrap;
+line-height: normal;
+text-align: left;
+font-family: arial,sans-serif;
+display: inline-block;
+outline: none;
+vertical-align: middle;
+border-radius: 2px;
+box-sizing: border-box;
+height: 30px;
+width: 30px;
+background-size: 528px 68px;
+background-image: url('//ssl.gstatic.com/gb/images/i2_2ec824b0.png');
+background-position: -132px -38px;
+opacity: .55;
+color: #000;
+cursor: pointer;
+text-decoration: none;
+}
+.account-div {
+    font-family: arial,sans-serif;
+color: #222;
+font-size: 13px;
+line-height: normal;
+text-align: left;
+padding: 0 0 0 15px;
+vertical-align: middle;
+white-space: nowrap;
+margin-left: 0!important;
+margin-right: 0!important;
+display: flex;
+flex: 0 1 auto;
+}
+.account-img {
+    font-size: 13px;
+line-height: normal;
+text-align: left;
+white-space: nowrap;
+font-family: arial,sans-serif;
+color: #000;
+cursor: pointer;
+background-size: 32px 32px;
+border: 0;
+border-radius: 50%;
+display: block;
+margin: -1px;
+position: relative;
+height: 32px;
+width: 32px;
+z-index: 0;
+}
 .center {
     padding-top: 109px;
     height: 92px;
@@ -140,8 +196,11 @@ display: inline-block;
             <div class="nav-right">
                 <li><a class="nav-words-right" href="google.com">Gmail</a></li>
                 <li><a class="nav-words-right" href="google.com">Images</a></li>
-                <li><a class="nav-words-right" href="google.com">Apps</a></li>
-                <li><a class="nav-words-right" href="google.com">Account</a></li>
+                <li><a class="nav-words-right products" href="google.com"></a></li>
+                <li><div class="account-div">
+                    <a class="nav-words-right" href="google.com"</a>
+                        <img class="account-img" src="/img/account.jpg" srcset="/img/account.jpg 1x, /img/account.jpg 2x" alt="google profile picture">
+                </div></li>
             </div>
         </ul>
     </nav>
